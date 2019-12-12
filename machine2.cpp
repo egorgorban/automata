@@ -70,7 +70,6 @@ int machine(std::string str, int length) {
 	for (int i = 0; i < length; ++i) {
 
 		int cur = stack.length() - 1;
-		if (cur < 0) return i;
 		if (state == 3) return i;
 		// номера ячейки в "таблице переходов"
 		int ind1 = state; // текущее состояние
